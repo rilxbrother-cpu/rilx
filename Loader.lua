@@ -12,7 +12,7 @@ local player = Players.LocalPlayer
 local KEY_LIST_URL = "https://raw.githubusercontent.com/ens9555/MasensDevHub/main/keys.json"
 local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/ens9555/MasensDevHub/main/Main.lua"
 local SAVE_FILE = "MD_MasensDevHub_KeySave.json"
-local KEY_EXPIRE_TIME = 12 * 3600 -- 12 Jam dalam detik (43.200 detik)
+local KEY_EXPIRE_TIME = 72 * 3600 -- 12 Jam dalam detik (43.200 detik)
 
 -- LINK GET KEY
 local GET_KEY_LINK = "https://link-hub.net/9347872/OeHjUSdeYOef" 
@@ -138,7 +138,7 @@ if isfile and isfile(SAVE_FILE) then
                     clearSavedKey()
                 end
             else
-                print("[MasensDev Hub] Key sudah kedaluwarsa (lebih dari 12 Jam).")
+                print("[MasensDev Hub] Key sudah kedaluwarsa (lebih dari 72 Jam).")
                 clearSavedKey()
             end
         else
